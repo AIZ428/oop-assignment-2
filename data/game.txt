@@ -1,0 +1,66 @@
+player:ahmed
+map:r1
+    room:r1,Entrance Room,A dusty room that connects a few rooms,false
+        equipment:cb1,crowbar,An old dusty crowbar that can open some containers,false,open,wc1,dh1,You use the crowbar to pry open the wooden cupboard and emptied its contents on the room
+        container:wc1,cupboard,A wooden cupboard.,false
+    	item:dh1,handle,Dagger handle,true
+        exit:e1,north,A door to the north,r2,false
+    	exit:e2,west,A door to the west,r9,false
+    	exit:e3,east,A door to the east,r4,false
+    room:r2,Central Hallway,Simple corridor that serves as a hub for many areas.,false
+    	equipment:l1,lamp,An oil-lit lamp,false,reveal,r3,e8,You turn on the lamp and it dimly lits up the room; seems like it revealed some exit...
+        exit:e4,north,A tunnel to the north,r3,false
+    	exit:e5,west,A door to the west,r5,false
+    	exit:e6,east,Broken window to the east,r6,false
+        exit:e7,south,A door to the south,r1,false
+    room:r3,Dark Cave,A pitch-black room - cant see exits due to darkness here!, false
+    	equipment:pa1,stonepickaxe,A stone pickaxe thrown in the corner,false,open,tc1,rp1,You use the pickaxe to break open the treasure chest and empty its contents on the room
+    	container:tc1,chest,A dusty ancient-looking treasure chest,false
+    	item:rp1,rope,A strong rope,true
+    	exit:e8,south,A door to the south,r2,true
+    room:r4,Storage Room,A large room full of empty crates,false
+    	item:cr1,crate,An empty uninteresting crate at the corner,false
+        item:bld1,blade,A rusty dagger blade,false
+    	exit:e9,west,A door to the west,r1,false
+    room:r5,Trap Room,A tight room with pressure plates lining the floor leading to a metal box in the center,false
+    	item:an1,anchor,A heavy metal anchor right at the door,false
+    	equipment:g1,gear,Golden gear for entire body,true,reveal,r7,e14,You place the golden gear into the altar; the wall is lifted mysteriously to unlock a room to the south
+    	container:mb1,metalbox,A metal box at the center of the room,false
+    	exit:e10,east,A door finally leading east,r2,false
+    room:r6,Locked Door Room,Sturdy locked jail door,false
+    	container:ld1,lockeddoor,A locked door with a key hole,false
+        item:s1,shard,A basic metal shard,false
+    	exit:e11,west,A door to the west,r2,false
+    	exit:e12,east,The metal door leads east somewhere...,r7,true
+    room:r7,Broken Altar Room,A room with a mystical altar with a glowing slot,false
+    	container:alt1,altar,A mystical altar taking gear with a glowing shine to it,false
+    	exit:e13,west,A door to the west,r6,false
+    	exit:e14,south,Wall lifted up south,r8,true
+    room:r8,Hidden Passage,A narrow corridor with a locked closet covered in vines.,false
+    	container:cl1,closet,A closet surrounded by now burnt vines,true
+    	container:v1,vines,Vines surrounding the closet,false
+    	equipment:t1,torch,A simple torch found between the thick vines,false,open,v1,cl1,You use the torch to burn the vines around the locked closet; finally revealing it; but it's locked!
+    	equipment:lvr1,lever,A lever that can be used to open the closet,false,open,cl1,pa2,You use the lever to open the closet and empty its contents on the room
+        equipment:pa2,ironpickaxe,An iron pickaxe next to the pedestal,true,open,sp1,as1,You use the iron pickaxe to break open the stone pedestal; extracting the contents onto the room
+    	exit:e15,north,A door to the north,r7,false
+    	exit:e16,south,A passage headed south,r10,false
+    room:r9,Monster Lair,A large monster is here protecting a barrel; the longer you stay here the more points deducted,false
+    	container:b1,barrel,A barrel defended by a monster,true
+    	container:m1,monster,A large monster that is here to fight you; every 5 seconds you're here you lose 1 point,false
+    	equipment:dk1,drumkey,A drumkey that can be used to open barrels,false,open,b1,f1,You use the drumkey to open the barrel finding a storage of claw fragments from the monster which you empty out on the room
+    	item:f1,fragment,A fragment from the claw of the monster,true
+    	exit:e17,east,A door to the east,r1,false
+    room:r10,Underground Stream,A stream flows gently with a stone pedestal on the bank,false
+    	container:sp1,stonepedestal,A stone pedestal that seems to have something under it,false
+    	equipment:as1,ancientsymbol,A powerful ancient symbol,true,reveal,r11,e20,You place the ancient on an altar at the puzzle room; the place starts to crumble and finally reveals an exit south
+    	exit:e18,south,A passage opens down south,r11,false
+    	exit:e19,north,A door to the north,r8,false
+    room:r11,Puzzle Room,A pedestal in the center is surrounded by symbols,false
+    	exit:e20,south,A glowing exit leading south,r12,true
+    room:r12,Final Chambel,The final chamber; the Ancient Crown sits atop a grand pedestal,false
+    	item:ac1,ancientcrown,The magical ancient crown; take the crown to complete the game!,false
+	
+	
+	
+	
+	
